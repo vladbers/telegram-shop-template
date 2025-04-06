@@ -29,7 +29,7 @@ const Filter = () => {
 
   return (
     <S.Container>
-      <S.Title>Размеры:</S.Title>
+      <S.Title>Категории:</S.Title>
       {createCheckboxes()}
     </S.Container>
   );

@@ -32,10 +32,7 @@ const CartProduct = ({ product }: IProps) => {
         onClick={handleRemoveProduct}
         title="remove product from cart"
       />
-      <S.Image
-        src={require(`static/products/${sku}-1-cart.webp`)}
-        alt={title}
-      />
+      <S.Image src={require(`static/products/${sku}.jpeg`)} alt={title} />
       <S.Details>
         <S.Title>{title}</S.Title>
         <S.Desc>

@@ -40,9 +40,13 @@ export const Container = styled.div<IContainer>`
   ${Image} {
     width: 100%;
     height: 270px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     position: relative;
     background-image: ${({ sku }) =>
-      `url(${require(`static/products/${sku}-1-product.webp`)})`};
+      `url(${require(`static/products/${sku}.jpeg`)})`};
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -64,11 +68,6 @@ export const Container = styled.div<IContainer>`
   }
 
   &:hover {
-    ${Image} {
-      background-image: ${({ sku }) =>
-        `url(${require(`static/products/${sku}-2-product.webp`)})`};
-    }
-
     ${BuyButton} {
       background-color: ${({ theme }) => theme.colors.secondary};
     }
